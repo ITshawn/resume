@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>飞牌</title>
+  <style type="text/css">
+.box div{
+  width: 80px;height: 120px;
+}
+.box div img{
+  width: 78px;height: 118px;
+}
+.box{
+  width: 100%;
+  background-color: lightblue;
+}
+div[name="ease"]{
+  -webkit-transition:all 4s ease;
+}
+div[name="ease-in"]{
+  -webkit-transition:all 4s ease-in;
+}
+div[name="ease-out"]{
+  -webkit-transition:all 4s ease-out;
+}
+div[name="ease-in-out"]{
+  -webkit-transition:all 4s ease-in-out;
+}
+div[name="linear"]{
+  -webkit-transition:all 4s linear;
+}
+.box:hover div{
+  margin-left: 80%;
+  border-radius: 10px;
+  -webkit-transform:rotate(1080deg)
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div name="ease"><img src="laok.jpg" alt=""></div>
+    <div name="ease-in"><img src="laok.jpg" alt=""></div>
+    <div name="ease-out"><img src="laok.jpg" alt=""></div>
+    <div name="ease-in-out"><img src="laok.jpg" alt=""></div>
+    <div name="linear"><img src="laok.jpg" alt=""></div>
+  </div>
+</body>
+</html>
